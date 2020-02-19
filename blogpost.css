@@ -8,11 +8,6 @@
     font-family: nos;
 }
 
-body{
-    background: whitesmoke;
-}
-
-
 div#container > p {
     border: 1px solid black;
   }
@@ -45,6 +40,7 @@ li a:hover {
 
 body {
     width: 100%;
+    background: whitesmoke;
 }
 
 .img-container {
