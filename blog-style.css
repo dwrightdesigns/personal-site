@@ -70,7 +70,6 @@ h2 {
     margin-top: -17px;
     font-family: "nos", Arial, Helvetica, sans-serif;
     font-size: 1.7em;
-    text-align: center;
     font-weight: 400;
 }
 
@@ -93,58 +92,83 @@ p {
     font-family: "Dosis",Arial, Helvetica, sans-serif;
 }
 
-.blog-post:after{
-    width: 500px;
-    margin-block: 100px;
-    clear: both;
+cite{
+    text-align: center;
 }
 
-.blog-header {
-        background-image: url(./Images/leaves.jpg);
-        width: 100vw;
-        height: 60vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: relative;
+.blog-header{
+    background-image: url(images/leaves.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vh;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 40px;
 }
 
-.blog-title {
-    margin-top: 150px;
-    color: #000;
-    clear: both;
+.blog-post{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
 }
 
-.blog-post {
+.blog-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content img{
+    float: right;
+    width: 30%;
+    /* margin-right: 20px; */
+}
+
+.post-img1{
+    width: 30%;
     float: left;
+    margin-left: 20px;
 }
 
-.blog-post p {
-    float: right;
+.blog-post h2{
+    text-align: center;
 }
 
-.blog-pic {
-    width: 300px;
+/* social media buttons */
+
+.social{
+    padding: 40px;
+    padding-top: 0;
 }
 
-.blog-text {
-    float: right;
-    width: 1000px;
-}
-@media only screen and (max-width: 920px){
-    .inner-container {
-        margin-top: 100px;
-    }
-}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
 
-@media only screen and (max-width: 540px){
-    .inner-container {
-        margin-top: 150px;
-    }
-    h1{
-        font-size: 5em;
-    }
-    h2{
-        font-size: 1.4em;
-    }
-}
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
